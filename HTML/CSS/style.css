@@ -1,0 +1,184 @@
+/* menubr */
+.menubar{
+    background-color: #02223e;;
+}
+.allmenu{
+    
+    margin-left: 400px;
+}
+ .dropdown
+ {
+     margin: 0px 16px;
+ }
+
+ .allmenu{
+     display: flex;
+     background-color: none;
+     margin-bottom: 0px;
+ }
+ .nav-iteams {
+     display: flex;
+     margin-bottom: 0px;
+     padding-bottom: 0px;
+ }
+ li{
+     list-style: none;
+     color: aliceblue;
+     font-size: 20px;
+ }
+ .image{
+     margin-right: 12px;
+ }
+ .contact{
+     margin-left: 50px;
+     margin-right: 0px;
+ }
+ .accent-arrow{
+     color: rgb(0, 189, 247);
+     padding: 2px;
+     
+ }
+
+ /* menubar */
+
+ /* top container */
+
+ .homepage {
+    background-color: #02223e;;
+}
+
+.topcontainer {
+    background-color: #02223e;;
+    height: 500px;
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+p.b{
+    font-size: 50px;
+    margin: 0px;
+}
+p.a,p.c{
+    font-size: 18px;
+    margin: 0px;
+}
+.one{   
+    padding: 10px;
+    width: 20%;
+    margin-left: 400px;
+    margin-top: 60px;
+    padding-bottom: 0px;
+}
+
+/*top container */
+
+.container2{
+    height: auto;
+    
+}
+.pricingcard,.pricingcard2,.pricingcard3{
+    width: 300px;
+    border: 2px solid red;
+    height: 600px;
+    background-color: bisque;
+    border-radius: 30px;
+    box-shadow: 5px 10px #888888;
+    margin-right: 67px;
+}
+/* .pricingcard{
+    margin-right: 40px;
+} */
+.desc
+{
+    color: black;
+    margin: 6px 8px;
+    padding:0px;
+    font-size: 12px;
+
+}
+h3{
+    text-align: center;
+    font-size: 35px;
+    margin: 0px;
+    margin-bottom: 3px;
+    padding: 4px;
+}
+h4{
+    text-align: center;
+    color: rgb(0, 102, 255) ;
+    font-size: 25px;
+    margin: 0px;
+    margin-bottom: 20px;
+    padding: 0px;
+
+}
+.buttoum{
+    margin-top: 185px;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+  
+}
+.b1{
+    height: 50px;
+    width: 140px;
+    color: black;
+    font-size: 25px;
+    background-color: rgb(145, 145, 11);
+    box-shadow: 2px 3px #02000000;
+}
+.info{
+    font-size: 20px;
+    margin: 8px;
+}
+.products{
+    display: flex;
+    margin-left: 420px;
+}
+.compare{
+    margin-top: 30px;
+}
+.buttoum2{
+    margin-top: 140px;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+.buttoum3{
+    margin-top: 30px;
+    box-sizing: border-box;
+    display: grid;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+    justify-items: center;
+}
+
+
+.container3 {
+    color: midnightblue;
+    margin-left: 390px;
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.heading {
+    font-size: 30px;
+}
+
+.list1 {
+    margin: 0px 45px;
+    padding: 20px;
+}
+
+.lists {
+    display: flex;
+}
