@@ -7,74 +7,53 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="HTML\CSS\style.css">
-    <style>
-        .container4 {
-            margin: 20%;
-            margin-top: 80px;
-        }
-
-        .con4 {
-            text-align: center;
-            color: navy;
-            font-size: 70px;
-        }
-
-        .left {
-            height: 600px;
-            width: 1400px;
-            box-sizing: border-box;
-            border: 2px solid red;
-        }
-
-        .actual {
-            display: flex;
-        }
-        .left4{
-            display: flex;
-            margin: 50px;
-        }
-        .left1,.left2{
-            margin: 20px;
-            background-color: rgb(161, 185, 26);
-        }
-        .one1{
-            font-size: 40px;
-       }
-    </style>
 </head>
-
+<style>
+    footer,.foot1{
+        height: 400px;
+        width: 100%;
+        margin:  150px 10px;
+        margin-bottom: 10px;
+        background-color: #02223e;
+    }
+    .foot1{
+        height: 50px;
+        background-color: bisque;
+        box-shadow: ;
+    }
+</style>
 <body>
     <div class="homepage">
         <div class="menubar">
             <header class="top">
                 <div class="allmenu">
                     <div class="image">
-                        <div class="nav-iteams">
-                            <img src="HTML\img\nav-for-dark.svg" alt="logo">
+                        <div onclick="fun3" class="nav-iteams">
+                             <a href=""><img src="HTML\img\nav-for-dark.svg" alt="logo"></a>
                         </div>
                     </div>
                     <nav class="menubar">
                         <div class="container">
                             <ul class="nav-iteams">
-                                <li id="hosting" class="dropdown " role="presentation" aria-haspopup="true"
-                                    aria-expanded="false" tabindex="0">Hosting</li>
+                                <li  id="hosting" class="dropdown " role="presentation" aria-haspopup="true"
+                                    aria-expanded="false" tabindex="0"> <button onclick="fun4()">Hosting</button></li>
                                 <li id="PROHosting" class="dropdown " role="presentation" aria-haspopup="true"
-                                    aria-expanded="false" tabindex="0">PRO Hosting</li>
-                                <li id="Domains" class="dropdown " role="presentation" aria-haspopup="true"
-                                    aria-expanded="false" tabindex="0">Domains</li>
-                                <li id="Resources" class="dropdown " role="presentation" aria-haspopup="true"
-                                    aria-expanded="false" tabindex="0">Resources</li>
-                                <li id="Affiliates" class="dropdown " role="presentation" aria-haspopup="true"
-                                    aria-expanded="false" tabindex="0">Affiliates</li>
-                                <div class="contact">
+                                    aria-expanded="false" tabindex="0"> <button onclick="fun5()"> PRO Hosting</button></li>
+                                <li  id="Domains" class="dropdown " role="presentation" aria-haspopup="true"
+                                    aria-expanded="false" tabindex="0"> <button onclick="fun3()">Domains</button> </li>
+                                <li  id="Resources" class="dropdown " role="presentation" aria-haspopup="true"
+                                    aria-expanded="false" tabindex="0"> <button onclick="fun2()"> Resources</button></li>
+                                <li  id="Affiliates" class="dropdown " role="presentation" aria-haspopup="true"
+                                    aria-expanded="false" tabindex="0"> <button onclick="fun1()"> Affiliates</button></li>
+                                <div onclick="fun2()" class="contact">
                                     <div class="nav-iteams">
                                         <li id="Affiliates" class="dropdown " role="presentation" aria-haspopup="true"
-                                            aria-expanded="false" tabindex="0">contact <span
-                                                class="accent-arrow">→</span>
+                                            aria-expanded="false" tabindex="0"> <a href="" onclick="alert1()"> contact <span
+                                                class="accent-arrow">→</span></a>
                                         </li>
                                         <li id="Affiliates" class="dropdown " role="presentation" aria-haspopup="true"
-                                            aria-expanded="false" tabindex="0">Sign In<span
-                                                class="accent-arrow">→</span>
+                                            aria-expanded="false" tabindex="0"> <a href="https://portal.hostgator.com/login">Sign In<span
+                                                class="accent-arrow">→</span></a>
                                         </li>
                                     </div>
                                 </div>
@@ -85,17 +64,21 @@
             </header>
         </div>
         <div class="topcontainer">
-            <div class="one">
-                <P class="a">Shared Hosting</P>
-                <P class="b">Hosting for
+            <div class="one" >
+                <P id="a">Shared Hosting</P>
+                 <P onmouseover="fun1()" id="b">Hosting for
                     every website .</P>
-                <p class="c">Unmetered bandwidth, free email, unbeatable hosting
+                <p id="c">Unmetered bandwidth, free email, unbeatable hosting
                     . This gator's got ya covered
                 </p>
-                <p class="d">And we'll throw in a free domain for a year, too</p>
+                <p id="d">And we'll throw in a free domain for a year, too</p>
+            </div>
+            <div class="photo">
+                <img src="HTML\img\accord-seo.png" alt="photo" id="changephoto">
             </div>
         </div>
     </div>
+
     <div class="container2">
         <div class="products">
             <div class="pricingcard">
@@ -116,7 +99,7 @@
                     <p class="info">Introductory offer</p>
                     <div class="price">
                         <p class="price">
-                        <h4>$2.75/mo*</h4>
+                        <h4 id="check">$2.75/mo*</h4>
                         </p>
                     </div>
                     <button class="b1">Buy now</button>
@@ -181,6 +164,9 @@
             </div>
         </div>
     </div>
+    <div class="overlay">
+        <p class="overlay1">We Recomended</p>
+    </div>
     <div class="compare">
         <h4>Compare all plans</a>
     </div>
@@ -192,7 +178,7 @@
             <div class="list1">
 
                 <div class="unmetered">
-                    <img src="HTML\img\BandwidthIcon.svg" alt="bandwidth" class="src">
+                    <img src="HTML\img\BandwidthIcon - Copy.svg" alt="bandwidth" class="src">
                     <div class="heading">
                         <p>Unmetered <br>
                             bandwidth</p>
@@ -205,7 +191,7 @@
             <div class="list1">
 
                 <div class="unmetered">
-                    <img src="HTML\img\BandwidthIcon.svg" alt="domain" class="src">
+                    <img src="HTML\img\DomainIcon - Copy.svg" alt="domain" class="src">
                     <div class="heading">
                         <p>Domain<br>
                             registration</p>
@@ -218,7 +204,7 @@
             <div class="list1">
 
                 <div class="unmetered">
-                    <img src="HTML\img\WordPressIcon-Orange.svg" alt="ssl" class="src">
+                    <img src="HTML\img\SSLIcon - Copy.svg" alt="ssl" class="src">
                     <div class="heading">
                         <p>SSL<br>
                             certificate</p>
@@ -231,7 +217,7 @@
             <div class="list1">
 
                 <div class="unmetered">
-                    <img src="HTML\img\DomainIcon.svg" alt="one-click" class="src">
+                    <img src="HTML\img\SSLIcon - Copy.svg" alt="one-click" class="src">
                     <div class="heading">
                         <p>One-click<br>
                             installs</p>
@@ -277,4 +263,52 @@
             </div>
         </div>
     </div>
+    <div class="container5">
+        <div class="a6">
+            <p class="heading">Guaranteed
+            </p>
+            <p class="descript">If you're not happy, we'll refund your hosting fees in the first <a href=""> 30
+                    days.</a></p>
+        </div>
+        <div class="a6">
+            <p class="heading">24/7/365 support
+            </p>
+            <p class="descript">We work when you work. Whenever that happens to be.</p>
+        </div>
+        <div class="a6">
+            <p class="heading">99% uptime guarantee
+            </p>
+            <p class="descript">The best ability is availability—so we make sure your site stays up.</p>
+        </div>
+        <div class="a6">
+            <p class="heading">eCommerce Tools
+            </p>
+            <p class="descript">Create an online store so you can sell your goods and services.</p>
+        </div>
+        <div class="a6">
+            <p class="heading">$150 Google Ads
+            </p>
+            <p class="descript">Good credit to a great product that brings in more visitors.</p>
+        </div>
+        <div class="a6">
+            <p class="heading">cPanel access
+            </p>
+            <p class="descript">Know what you’re doing? Have at it, codemaster.</p>
+        </div>
+    </div>
+    <div class="last">
+        <div class="image2">
+            <div class="text"><p class="value1">One-click installs so you can build happy.</p></div>
+            <div class="given">
+            <div class="values"><img src="HTML\img\WordPressIcon-Orange.svg" alt="" class="src"></div>
+            <div class="values"><img src="HTML\img\logo-magento-solid.svg" alt="" class="src"></div>
+            <div class="values"><img src="HTML\img\logo-joomla-solid.svg" alt="" class="src"></div>
+            <div class="values"><img src="HTML\img\logo-drupal-solid.svg" alt="" class="src"></div>
+            <div class="values"><img src="HTML\img\logo-phpbb-solid.svg" alt="" class="src"></div>
+        </div>
+        </div>
+        
+    </div>
+    <script src="HTML\main.js"></script>
 </body>
+</html>
