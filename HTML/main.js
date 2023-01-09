@@ -38,3 +38,11 @@ function alert1()
 {
     alert("This is not avalable for now !!!");
 }
+$(document).ready(function(){
+    $("button").click(function(){
+        $("p").toggle(1000);
+    });
+});
+$("document").ready(function(){
+    $("lists").fadeOut(3000);
+});
